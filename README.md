@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Black Bil
 
 `CURSO`: ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
 
@@ -12,14 +12,13 @@ ODS Alinhados:
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Kauan Gabriel Pereira Fernandes 
+* Arthur Leandro Jacinto
+* João Pedro de Sousa Gomes
 
 ## Orientador
 
-* Nome completo do professor 1
+* Humberto Azevedo Nigri do Carmo
 
 ## Instruções de utilização
 
