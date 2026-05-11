@@ -26,7 +26,7 @@ Semelhante à imagem abaixo:
  
  ### 📎 Inserir o Diagrama de Arquitetura do Projeto do Grupo
 🚨 O grupo deverá inserir aqui a imagem
-![Exemplo de Arquitetura](docs/images/DER.jpeg)
+![Exemplo de Arquitetura](images/DER.jpeg)
 
 ---
 🔧**Ferramentas recomendadas:**
