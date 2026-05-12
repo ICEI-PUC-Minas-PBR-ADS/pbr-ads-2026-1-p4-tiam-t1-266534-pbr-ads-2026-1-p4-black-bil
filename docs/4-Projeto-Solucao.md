@@ -18,7 +18,7 @@ A arquitetura deve refletir o modelo de **fatias verticais**, evidenciando o flu
 
 Semelhante à imagem abaixo:
 
-![Exemplo de Arquitetura](https://uds.com.br/blog/wp-content/uploads/2024/09/Imagem-1-Comparativo-ilustrativo-das-diferencas-entre-front-end-e-back-end.jpg)
+![Exemplo de Arquitetura](images/Funcionamento.jpeg)
 
 
 
@@ -26,7 +26,7 @@ Semelhante à imagem abaixo:
  
  ### 📎 Inserir o Diagrama de Arquitetura do Projeto do Grupo
 🚨 O grupo deverá inserir aqui a imagem
-![Exemplo de Arquitetura](images/DER.jpeg)
+![Exemplo de Arquitetura - DER](images/DER.jpeg)
 
 ---
 🔧**Ferramentas recomendadas:**
