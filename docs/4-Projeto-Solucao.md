@@ -18,7 +18,7 @@ A arquitetura deve refletir o modelo de **fatias verticais**, evidenciando o flu
 
 Semelhante à imagem abaixo:
 
-![Exemplo de Arquitetura](images/Funcionamento.jpeg)
+![Exemplo de Arquitetura](images/Funcionamento.png)
 
 
 
