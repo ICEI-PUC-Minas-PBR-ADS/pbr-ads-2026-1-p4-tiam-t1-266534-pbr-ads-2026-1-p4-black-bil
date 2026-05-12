@@ -34,11 +34,6 @@ para uma melhor compreensão do desempenho dos serviços oferecidos. Do ponto de
 ---
 
 ## 1.4 Público-Alvo  
-Descreva quem vai usar a solução.  
-- Perfil: idade, profissão, familiaridade com tecnologia.  
-- Contexto: onde e como vai usar.
 
->💡 *Exemplo:*  
-> "Pequenos comerciantes de hortifrutis, com conhecimentos básicos de informática, que precisam de uma ferramenta simples e rápida para controle de estoque."
-
+Proprietário e funcionários de barbearia que precisam de uma ferramenta que irá fazer a ponte entre o cliente e a barbearia utilizando tecnologia e automações para visualização do negócio. Os clientes também são peça fundamental para funcionamento do projeto.
 ---
