@@ -127,14 +127,57 @@ CREATE TABLE Usuario (
 Incluir a estrutura dos documentos JSON (Schema).
 
 **Exemplo:**
+blackbill_db
+│
+├── clientes
+├── barbeiros
+├── servicos
+├── agendamentos
+└── pagamentos
 
-```json
+use blackbill_db
+
+db.createCollection("pagamentos")
+
+db.pagamentos.insertMany([
+
 {
-  "nome": "João Silva",
-  "email": "joao@email.com",
-  "senha": "hash_da_senha"
+    agendamentoId: ObjectId(),
+    valor: 45.00,
+    formaPagamento: "pix",
+    status: "pago",
+    parcelas: 1,
+    observacao: "Pagamento realizado via Pix",
+    dataPagamento: new Date(),
+    createdAt: new Date(),
+    atualizadoEm: new Date()
+},
+
+{
+    agendamentoId: ObjectId(),
+    valor: 25.00,
+    formaPagamento: "dinheiro",
+    status: "pago",
+    parcelas: 1,
+    observacao: "Pagamento realizado em dinheiro",
+    dataPagamento: new Date(),
+    createdAt: new Date(),
+    atualizadoEm: new Date()
+},
+
+{
+    agendamentoId: ObjectId(),
+    valor: 60.00,
+    formaPagamento: "cartao_credito",
+    status: "pendente",
+    parcelas: 2,
+    observacao: "Pagamento parcelado",
+    dataPagamento: null,
+    createdAt: new Date(),
+    atualizadoEm: new Date()
 }
-```
+
+])
 
 ### 📁 Obrigatório
 
