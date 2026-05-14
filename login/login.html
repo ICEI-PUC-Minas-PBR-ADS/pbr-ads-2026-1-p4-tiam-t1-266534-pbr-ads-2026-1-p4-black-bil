@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Bil - Login</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="titulo">
+            <h1>Black Bil</h1>
+        </div>
+        <div class="logo">
+            <img src="/pbr-ads-2026-1-p4-tiam-t1-266534-pbr-ads-2026-1-p4-black-bil-main/src/header/logo.jpg" alt="Logo Black Bil">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Agendamentos</a></li>
+                <li><a href="#">Produtos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <main class="container-login">
+
+        <!-- ABAS -->
+        <div class="abas">
+            <button class="aba ativa" id="btn-login">Login</button>
+            <button class="aba" id="btn-cadastro">Cadastro</button>
+        </div>
+
+
+        <!-- CARD -->
+        <div class="card-login">
+
+            <!-- ESCOLHA DE PERFIL -->
+            <div class="tipo-usuario">
+                <label>
+                    <input type="radio" name="tipo" checked>
+                    Cliente
+                </label>
+
+                <label>
+                    <input type="radio" name="tipo">
+                    Funcionário
+                </label>
+            </div>
+
+
+            <!-- BOTÕES PERFIL -->
+            <div class="botoes-perfil">
+                <button class="perfil ativo">
+
+                    <!-- EDITE O CAMINHO DO ÍCONE -->
+
+                    Cliente
+                </button>
+
+                <button class="perfil">
+
+                    <!-- EDITE O CAMINHO DO ÍCONE -->
+
+                    Funcionário
+                </button>
+            </div>
+
+
+            <!-- FORM LOGIN -->
+            <form id="form-login">
+
+                <div class="input-grupo">
+
+                    <!-- EDITE O CAMINHO DO ÍCONE -->
+                    <img src="/pbr-ads-2026-1-p4-tiam-t1-266534-pbr-ads-2026-1-p4-black-bil-main/src/icone/email.png" alt="Email">
+
+                    <input type="email" placeholder="E-mail" required>
+                </div>
+
+
+                <div class="input-grupo">
+
+                    <!-- EDITE O CAMINHO DO ÍCONE -->
+                    <img src="/pbr-ads-2026-1-p4-tiam-t1-266534-pbr-ads-2026-1-p4-black-bil-main/src/icone/senha.png" alt="Senha">
+
+                    <input type="password" placeholder="Senha" required>
+                </div>
+
+
+                <button type="submit" class="btn-principal">
+                    Entrar
+                </button>
+            </form>
+
+
+            <!-- FORM CADASTRO -->
+            <form id="form-cadastro" class="escondido">
+
+                <div class="input-grupo">
+
+                    <!-- EDITE O CAMINHO DO ÍCONE -->
+                    <img src="/pbr-ads-2026-1-p4-tiam-t1-266534-pbr-ads-2026-1-p4-black-bil-main/src/icone/usuario-fundo-branco.png" alt="Nome">
+
+                    <input type="text" placeholder="Nome" required>
+                </div>
+
+
+                <div class="input-grupo">
+
+                    <!-- EDITE O CAMINHO DO ÍCONE -->
+                    <img src="/pbr-ads-2026-1-p4-tiam-t1-266534-pbr-ads-2026-1-p4-black-bil-main/src/icone/telefone.png" alt="Telefone">
+
+                    <input type="text" placeholder="Telefone" required>
+                </div>
+
+
+                <div class="input-grupo">
+
+                    <!-- EDITE O CAMINHO DO ÍCONE -->
+                    <img src="/pbr-ads-2026-1-p4-tiam-t1-266534-pbr-ads-2026-1-p4-black-bil-main/src/icone/email.png" alt="Email">
+
+                    <input type="email" placeholder="E-mail" required>
+                </div>
+
+
+                <div class="input-grupo">
+
+                    <!-- EDITE O CAMINHO DO ÍCONE -->
+                    <img src="/pbr-ads-2026-1-p4-tiam-t1-266534-pbr-ads-2026-1-p4-black-bil-main/src/icone/senha.png" alt="Senha">
+
+                    <input type="password" placeholder="Senha" required>
+                </div>
+
+
+                <div class="input-grupo">
+
+                    <!-- EDITE O CAMINHO DO ÍCONE -->
+                    <img src="/pbr-ads-2026-1-p4-tiam-t1-266534-pbr-ads-2026-1-p4-black-bil-main/src/icone/senha.png" alt="Confirmar Senha">
+
+                    <input type="password" placeholder="Confirmar Senha" required>
+                </div>
+
+
+                <button type="submit" class="btn-principal">
+                    Cadastrar
+                </button>
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="login.js"></script>
+</body>
+</html>
