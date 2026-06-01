@@ -129,8 +129,8 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|  Kauan           |        |Elaboração dos objetivos e justificativa | 08/03 | 15/03 | ✔️ |
-|  Arthur          |        | Localizar uma entidade para realizar o projeto. | 08/03 | 23/03 | ✔️ |
+|  Kauan           |     PO   |Elaboração dos objetivos e justificativa | 08/03 | 15/03 | ✔️ |
+|  Arthur          |  Dev      | Localizar uma entidade para realizar o projeto. | 08/03 | 23/03 | ✔️ |
 |  Todos           |        | Definição da ideia | 08/03 | 23/03 | ✔️ |
 |  Todos           |        | Apresentação e documentação| 10/03 | 23/03 | ✔️ |
 
@@ -140,10 +140,10 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|  Kauan          |        | Criação do Wireframe| 21/03 | 09/05 | ✔️ |
-|  Arthur           |        | Criação do modelo no Figma | 22/03 | 09/05 | ✔️ |
-|  Kauan           |        | Diagrama Entidade-Relacionamento | 25/03 | 09/05 | ✔️ |
-|  João           |        | Modelagem da Interface | 02/04 | 09/05 |✔️ |
+|  Kauan          |    PO    | Criação do Wireframe| 21/03 | 09/05 | ✔️ |
+|  Arthur           |    Desenvolvedor    | Criação do modelo no Figma | 22/03 | 09/05 | ✔️ |
+|  Kauan           |   PO     | Diagrama Entidade-Relacionamento | 25/03 | 09/05 | ✔️ |
+|  João           |   Desenvolvedor     | Modelagem da Interface | 02/04 | 09/05 |✔️ |
 
 ---
 
@@ -151,10 +151,10 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|   Arthur          |        | Protótipo das telas| 18/04 | 17/05 | ✔️ |
-|   Kauan          |        | Criação do banco | 20/04 | 17/05 | ✔️ |
-|   João          |        | Implementação do sistema | 28/04 | 17/05 | ✔️ |
-|   Arthur          |        |Interface implementada partes do sistema | 28/04 | 17/05 | ✔️ |
+|   Arthur          |    Desenvolvedor    | Protótipo das telas| 18/04 | 17/05 | ✔️ |
+|   Kauan          |   PO     | Criação do banco | 20/04 | 17/05 | ✔️ |
+|   João          |  Desenvolvedor      | Implementação do sistema | 28/04 | 17/05 | ✔️ |
+|   Arthur          | Desenvolvedor       |Interface implementada partes do sistema | 28/04 | 17/05 | ✔️ |
 
 ---
 
