@@ -24,47 +24,38 @@ O projeto será realizado em **4 Sprints**, com entregas contínuas de código e
 
 ## 📅 Visão Geral
 
-### 🟢 Sprint 1 – Setup, Hello World e Visão do Produto
-- README com descrição do projeto
-- ODS escolhida
-- Backlog macro
-- Repositório criado
-- Banco de dados instanciado (vazio)
-- Tela "Hello World" conectada à API
+### 🟢 Sprint 1 – 
+- Definição da ideia
+- Localizar uma entidade para realizar o projeto.
+- Elaboração dos objetivos e justificativa, listagem dos processos e participantes do processo
 
 ---
 
-### 🟡 Sprint 2 – MVP (Primeira Fatia Vertical)
-- Requisitos Funcionais documentados
-- Script do Banco de Dados
-- 1ª funcionalidade completa funcionando
-- Dados sendo salvos no banco
-
-⚠️ Se não salvar no banco, não pontua.
+### 🟡 Sprint 2 – 
+- Modelagem da Interface
+- Criação do Wireframe
+- Criação do modelo no Figma
+- Diagrama Entidade-Relacionamento (DER)
 
 ---
 
-### 🔵 Sprint 3 – Core e Regras de Negócio
-- Implementação das regras de negócio
-- Validações no backend
-- DER atualizado via Engenharia Reversa
-- Diagrama de Classes atualizado
+### 🔵 Sprint 3 
+- Protótipo das telas
+- Criação do banco
+- Implementação do sistema
+- Interface implementada partes do sistema
 
 ---
 
-### 🟣 Milestone Específico – Teste de Usabilidade (UX)
-- Aplicação do Teste SUS com usuários reais
-- Avaliação das telas desenvolvidas nas Sprints 2 e 3
-- Preenchimento do Relatório de Usabilidade (Seção 6)
-
+### 🔴 Sprint 4
+- Implementação do sistema
+- Entrega aplicação funcional
 ---
 
-### 🔴 Sprint 4 – Finalização e Deploy
-- Correção de bugs apontados no Teste de UX e Code Review
-- Testes finais ponta a ponta
-- Documentação final consolidada
-- Relatório preenchido no APC
-- Sistema pronto para Arguição
+### 🔴 Sprint 5 – Finalização 
+- Implantação
+- Verificação e Validação
+- Entrega final e apresentação 
 
 ---
 
