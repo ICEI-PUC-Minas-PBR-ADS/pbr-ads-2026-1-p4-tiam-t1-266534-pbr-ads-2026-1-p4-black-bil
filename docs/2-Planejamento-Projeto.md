@@ -160,30 +160,30 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|             |        | Implementar Regra de Negócio Y | 06/04 | 15/04 | ❌ |
-|             |        | Implementar Cálculo/Processo Z | 06/04 | 15/04 | ❌ |
-|             |        | Atualizar DER via Engenharia Reversa | 16/04 | 20/04 | ❌ |
-|             |        | Atualizar Diagrama de Classes | 16/04 | 23/04 | ❌ |
+|   Arthur          |        | Protótipo das telas| 18/04 | 17/05 | ✔️ |
+|   Kauan          |        | Criação do banco | 20/04 | 17/05 | ✔️ |
+|   João          |        | Implementação do sistema | 28/04 | 17/05 | ✔️ |
+|   Arthur          |        |Interface implementada partes do sistema | 28/04 | 17/05 | ✔️ |
 
 ---
 
-# 🟣 Milestone – Teste de Usabilidade (UX)
+# 🔴 Sprint 4 – 
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|             |        | Aplicar roteiro de teste com usuários reais | 24/04 | 15/05 | ❌ |
-|             |        | Consolidar dados e preencher Seção 6 do template | 16/05 | 22/05 | ❌ |
+|  Todos           |        | Implementação do sistema| 15/05 | 08/06 | 📝 |
+|  Todos           |        |Entrega aplicação funcional | 17/06 | 08/06 | 📝 |
 
 ---
 
-# 🔴 Sprint 4 – Finalização
+# 🟣Sprint 5- Finalização
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|             |        | Correção de bugs de usabilidade e Code Review | 22/05 | 05/06 | ❌ |
-|             |        | Finalizar relatórios e dashboards | 01/06 | 15/06 | ❌ |
-|             |        | Preencher Relatório APC | 10/06 | 20/06 | ❌ |
-|             |        | Testes finais e consolidar README | 15/06 | 25/06 | ❌ |
+|   Todos          |        | Implantação | 01/06 | 22/06 | 📝 |
+|   Todos          |        | Verificação e Validação | 01/06 | 22/06 | 📝 |
+|   Todos          |        | Entrega final e apresentação | 01/06 | 22/06 | 📝 |
+
 
 ---
 
