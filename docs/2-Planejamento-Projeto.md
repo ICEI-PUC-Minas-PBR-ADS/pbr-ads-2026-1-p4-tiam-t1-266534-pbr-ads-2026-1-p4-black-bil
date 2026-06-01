@@ -134,29 +134,29 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 ---
 
-# 🟢 Sprint 1 – Setup
+# 🟢 Sprint 1 
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|             |        | Preencher Visão do Produto, ODS e Backlog no README | 12/03 | 15/03 | ❌ |
-|             |        | Criar instância do Banco de Dados | 12/03 | 16/03 | ❌ |
-|             |        | Criar repositório e estruturar pastas | 12/03 | 18/03 | ❌ |
-|             |        | Criar tela Hello World conectada à API | 15/03 | 20/03 | ❌ |
+|  Kauan           |        |Elaboração dos objetivos e justificativa | 08/03 | 15/03 | ✔️ |
+|  Arthur          |        | Localizar uma entidade para realizar o projeto. | 08/03 | 23/03 | ✔️ |
+|  Todos           |        | Definição da ideia | 08/03 | 23/03 | ✔️ |
+|  Todos           |        | Apresentação e documentação| 10/03 | 23/03 | ✔️ |
 
 ---
 
-# 🟡 Sprint 2 – MVP
+# 🟡 Sprint 2 
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|             |        | Gerar Script do Banco de Dados | 21/03 | 24/03 | ❌ |
-|             |        | Desenvolver Fatia 1 (BD + API + Tela) | 22/03 | 30/03 | ❌ |
-|             |        | Documentar Requisitos do MVP | 25/03 | 02/04 | ❌ |
-|             |        | Revisão técnica e Merge | 02/04 | 05/04 | ❌ |
+|  Kauan          |        | Criação do Wireframe| 21/03 | 09/05 | ✔️ |
+|  Arthur           |        | Criação do modelo no Figma | 22/03 | 09/05 | ✔️ |
+|  Kauan           |        | Diagrama Entidade-Relacionamento | 25/03 | 09/05 | ✔️ |
+|  João           |        | Modelagem da Interface | 02/04 | 09/05 |✔️ |
 
 ---
 
-# 🔵 Sprint 3 – Core
+# 🔵 Sprint 3 –
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
