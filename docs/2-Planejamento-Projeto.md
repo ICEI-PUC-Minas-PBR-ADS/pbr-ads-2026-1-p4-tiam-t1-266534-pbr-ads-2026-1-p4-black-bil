@@ -18,7 +18,7 @@ O projeto adota uma metodologia ágil, simulando o ambiente de uma Software Hous
 
 # 2.1 Sprints do Projeto
 
-O projeto será realizado em **4 Sprints**, com entregas contínuas de código e documentação, além de um marco focado em usabilidade.
+O projeto será realizado em **5 Sprints**, com entregas contínuas de código e documentação, além de um marco focado em usabilidade.
 
 ---
 
