@@ -6,7 +6,7 @@
 
 `SEMESTRE`: 1/2026
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto consiste no desenvolvimento de um site institucional para a barbearia Black Bil, com o objetivo de fortalecer sua presença digital e facilitar o acesso dos clientes a informações como serviços, produtos, horários de funcionamento, localização e contatos. A plataforma atuará como um canal oficial de comunicação, contribuindo para a divulgação e visibilidade do estabelecimento. Além disso, poderá incluir uma área restrita para funcionários, com dashboards contendo indicadores básicos do negócio, como quantidade de atendimentos e serviços mais procurados. O projeto possui caráter acadêmico e será desenvolvido exclusivamente para fins educacionais no contexto de uma disciplina do curso.
 
 ODS Alinhados:
 
