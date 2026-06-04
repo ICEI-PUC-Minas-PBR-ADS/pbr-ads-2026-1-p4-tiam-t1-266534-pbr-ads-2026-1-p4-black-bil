@@ -1,65 +1,66 @@
-/* Reset básico */
-
+/* Reset */
 * {
-    margin: 0.05rem;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header */
+/* Body como coluna full-height */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* ===== HEADER ===== */
 header {
     background-color: #a1d5d9;
-    color: black;
+    color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
 }
 
-/* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.titulo h1 {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.titulo h1:hover {
+    transform: scale(1.06);
 }
 
 .logo img {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 90px;
     height: 60px;
     object-fit: contain;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
+
 .logo:hover img {
     transform: translateX(-50%) scale(1.1);
 }
 
-.titulo h1{
-    font-family: 'Righteous', cursive;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    transition: transform 0.3s ease;
-}
-.titulo h1:hover{
-    transform: scale(1.1)
-}
-/* Menu */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 24px;
 }
 
 nav a {
-    color: #000000;
+    color: #000;
     text-decoration: none;
-    font-family: 'Outfit', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     display: inline-block;
     position: relative;
 }
@@ -69,7 +70,7 @@ nav a::after {
     position: absolute;
     width: 0%;
     height: 2px;
-    bottom: -5px;
+    bottom: -4px;
     left: 0;
     background-color: #8B5E3C;
     transition: width 0.3s ease;
@@ -79,38 +80,120 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* Container principal */
-.container-login {
+/* ===== LAYOUT DOIS PAINÉIS ===== */
+.pagina-login {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* ===== PAINEL ESQUERDO ===== */
+.painel-esquerdo {
+    flex: 1;
+    background: linear-gradient(160deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.foto-aviso {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 80vh;
-    padding: 20px;
-    background-color: #ffffff;
-    font-family: 'Outfit', sans-serif;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.35);
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    padding: 32px 48px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 }
 
-/* Abas */
+.foto-aviso:hover {
+    color: rgba(255, 255, 255, 0.65);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.painel-rodape {
+    padding: 32px 40px;
+    z-index: 1;
+}
+
+.painel-slogan {
+    font-family: 'Righteous', cursive;
+    font-size: 2.4rem;
+    color: #a1d5d9;
+    line-height: 1.1;
+}
+
+.painel-sub {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 6px;
+}
+
+/* ===== PAINEL DIREITO ===== */
+.painel-direito {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f7f8;
+    padding: 30px 20px;
+    overflow-y: auto;
+}
+
+.card-form {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* ===== CABEÇALHO DO FORM ===== */
+.form-cabecalho {
+    margin-bottom: 26px;
+}
+
+.form-titulo {
+    font-family: 'Righteous', cursive;
+    font-size: 1.85rem;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+}
+
+.form-subtitulo {
+    color: #6b7280;
+    font-size: 0.88rem;
+}
+
+/* ===== ABAS ===== */
 .abas {
     display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #d9e6e8;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #e5e7eb;
     width: 100%;
-    max-width: 400px;
 }
 
 .aba {
     background: none;
     border: none;
-    font-size: 1.1rem;
+    font-size: 0.97rem;
+    font-family: 'Outfit', sans-serif;
     font-weight: 600;
-    color: #555;
+    color: #9ca3af;
     cursor: pointer;
-    padding-bottom: 10px;
-    transition: color 0.3s ease;
+    padding: 8px 20px 12px;
+    transition: color 0.25s ease;
+    margin-bottom: -2px;
 }
 
 .aba:hover {
@@ -118,114 +201,157 @@ nav a:hover::after {
 }
 
 .aba.ativa {
-    color: #000;
+    color: #1a1a2e;
     border-bottom: 3px solid #a1d5d9;
 }
 
-/* Card */
-.card-login {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 400px;
-}
-
-/* Tipo de usuário */
-.tipo-usuario {
+/* ===== SELETOR DE PERFIL ===== */
+.perfil-selector {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 15px;
-    font-size: 0.95rem;
-    color: #333;
+    gap: 12px;
+    margin-bottom: 24px;
 }
 
-.tipo-usuario label {
-    cursor: pointer;
-}
-
-/* Botões perfil */
-.botoes-perfil {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.perfil {
+.btn-perfil {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background-color: #e6f2f3;
+    background-color: #f0f2f3;
     border: 2px solid transparent;
-    border-radius: 8px;
-    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 10px 14px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
+    font-family: 'Outfit', sans-serif;
     font-weight: 600;
-    width: 48%;
+    font-size: 0.88rem;
+    color: #6b7280;
 }
 
-.perfil img {
-    width: 22px;
-    height: 22px;
+.btn-perfil:hover {
+    background-color: #e0f0f2;
+    color: #1a1a2e;
 }
 
-.perfil:hover {
-    background-color: #d0e8ea;
-}
-
-.perfil.ativo {
+.btn-perfil.ativo {
     background-color: #a1d5d9;
+    border-color: #a1d5d9;
     color: #fff;
 }
 
-/* Inputs */
+/* ===== INPUTS ===== */
 .input-grupo {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
-    border: 1px solid #d9e6e8;
-    border-radius: 6px;
-    padding: 8px 10px;
+    margin-bottom: 14px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 14px;
     background-color: #fff;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.input-grupo img {
-    width: 20px;
-    height: 20px;
+.input-grupo:focus-within {
+    border-color: #a1d5d9;
+    box-shadow: 0 0 0 3px rgba(161, 213, 217, 0.2);
+}
+
+.input-icone {
+    display: flex;
+    align-items: center;
     margin-right: 10px;
+    color: #c4c9cf;
+    flex-shrink: 0;
+    transition: color 0.25s ease;
+}
+
+.input-grupo:focus-within .input-icone {
+    color: #7fc4c9;
 }
 
 .input-grupo input {
     border: none;
     outline: none;
     flex: 1;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    font-family: 'Outfit', sans-serif;
     background: transparent;
+    color: #1a1a2e;
 }
 
-/* Botão principal */
+.input-grupo input::placeholder {
+    color: #d1d5db;
+}
+
+/* ===== BOTÃO OLHO ===== */
+.btn-olho {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #c4c9cf;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+}
+
+.btn-olho:hover {
+    color: #7fc4c9;
+}
+
+/* ===== FORM EXTRAS ===== */
+.form-extras {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -6px;
+    margin-bottom: 20px;
+}
+
+.link-esqueceu {
+    font-size: 0.83rem;
+    color: #8B5E3C;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.link-esqueceu:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+/* ===== BOTÃO PRINCIPAL ===== */
 .btn-principal {
     width: 100%;
-    padding: 12px;
+    padding: 13px;
     background-color: #a1d5d9;
     color: #fff;
     border: none;
-    border-radius: 6px;
-    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    letter-spacing: 0.4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-principal:hover {
-    background-color: #8bbfc3;
-    transform: scale(1.03);
+    background-color: #7fc4c9;
+    transform: scale(1.02);
 }
 
-/* Escondido */
+/* ===== ERRO SENHA ===== */
+.erro-senha {
+    font-size: 0.82rem;
+    color: #ef4444;
+    margin-top: -8px;
+    margin-bottom: 12px;
+}
+
+/* ===== UTILITÁRIOS ===== */
 .escondido {
     display: none;
 }
