@@ -1,0 +1,24 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "1e1bc962-c98b-4acf-967f-e6f4ddf290c6",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1780783128467"
+        }
+      },
+      "favorite": {
+        "name": "Barbearia"
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      }
+    }
+  ]
+}
