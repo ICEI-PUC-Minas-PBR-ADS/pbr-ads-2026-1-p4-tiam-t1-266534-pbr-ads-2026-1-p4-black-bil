@@ -62,6 +62,8 @@ Cada Wireframe ou Mockups devem estar associados a pelo menos:
 
 - Um Requisito Funcional (RF-XX)
 - Uma História de Usuário
+- <img width="1882" height="915" alt="image" src="https://github.com/user-attachments/assets/e4eec337-9504-411a-b730-9e8b0e11aaf1" />
+
 
 
 ## 📌 Exemplo Ilustrativo – Tela de Cadastro (RF-01)
