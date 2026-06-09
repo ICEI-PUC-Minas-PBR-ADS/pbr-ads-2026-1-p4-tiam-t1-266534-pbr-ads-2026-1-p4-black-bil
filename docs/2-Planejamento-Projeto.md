@@ -162,8 +162,8 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|  Todos           |        | Implementação do sistema| 15/05 | 08/06 | 📝 |
-|  Todos           |        |Entrega aplicação funcional | 17/06 | 08/06 | 📝 |
+|  Todos           |        | Implementação do sistema| 15/05 | 08/06 | ✔️ |
+|  Todos           |        |Entrega aplicação funcional | 17/06 | 08/06 | ✔️ |
 
 ---
 
