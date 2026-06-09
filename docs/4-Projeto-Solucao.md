@@ -62,7 +62,10 @@ Cada Wireframe ou Mockups devem estar associados a pelo menos:
 
 - Um Requisito Funcional (RF-XX)
 - Uma História de Usuário
-- <img width="1882" height="915" alt="image" src="https://github.com/user-attachments/assets/e4eec337-9504-411a-b730-9e8b0e11aaf1" />
+
+
+<img width="1763" height="1300" alt="image" src="https://github.com/user-attachments/assets/7af5788a-9c80-497c-b130-c754808753f9" />
+
 
 
 
