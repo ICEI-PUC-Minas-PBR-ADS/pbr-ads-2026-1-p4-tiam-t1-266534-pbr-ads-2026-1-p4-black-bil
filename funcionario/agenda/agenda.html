@@ -34,11 +34,22 @@
         </div>
         <button class="btn-nav-dia" id="btn-dia-pro" type="button">›</button>
         <button class="btn-hoje" id="btn-hoje" type="button">Hoje</button>
+        <button class="btn-bloquear-dia" id="btn-bloquear-dia" type="button">Bloquear dia</button>
     </div>
 
     <main class="container">
 
         <div class="resumo-dia" id="resumo-dia"></div>
+
+        <div class="aviso-dia-bloqueado escondido" id="aviso-dia-bloqueado">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+            <p class="aviso-titulo">Dia bloqueado para agendamentos</p>
+            <p class="aviso-sub">Os clientes não conseguem marcar horário neste dia.</p>
+        </div>
 
         <div class="bloco-periodo">
             <h3 class="periodo-titulo">Manhã</h3>
@@ -73,6 +84,7 @@
         </div>
     </div>
 
+    <script src="../../api.js"></script>
     <script src="agenda.js"></script>
 </body>
 </html>
