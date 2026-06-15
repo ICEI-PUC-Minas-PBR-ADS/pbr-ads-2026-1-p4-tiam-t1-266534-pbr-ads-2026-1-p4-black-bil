@@ -5,17 +5,6 @@ O projeto adota uma metodologia ágil, simulando o ambiente de uma Software Hous
 
 ---
 
-### 🚨 Regra de Ouro: 
-
-> ❗Não existe divisão entre “quem faz documento”, “quem faz Front-end” e “quem faz Back-end”.
-
-<br>Todos os integrantes são **Desenvolvedores Full-Stack** e devem implementar **Fatias Verticais (Vertical Slices)**.
-
-✔️ Cada membro deve entregar a funcionalidade completa:  
-**Banco de Dados → API → Tela**
-
----
-
 # 2.1 Sprints do Projeto
 
 O projeto será realizado em **5 Sprints**, com entregas contínuas de código e documentação, além de um marco focado em usabilidade.
@@ -171,9 +160,9 @@ O projeto pode utilizar a aba **Projects** do GitHub, porém é **OBRIGATÓRIO p
 
 | Responsável | Papel | Tarefa | Início | Prazo | Status |
 |-------------|--------|--------|--------|--------|--------|
-|   Todos          |        | Implantação | 01/06 | 22/06 | 📝 |
-|   Todos          |        | Verificação e Validação | 01/06 | 22/06 | 📝 |
-|   Todos          |        | Entrega final e apresentação | 01/06 | 22/06 | 📝 |
+|   Todos          |        | Implantação | 01/06 | 22/06 | ✔️ |
+|   Todos          |        | Verificação e Validação | 01/06 | 22/06 | ✔️ |
+|   Todos          |        | Entrega final e apresentação | 01/06 | 22/06 | ✔️ |
 
 
 ---
