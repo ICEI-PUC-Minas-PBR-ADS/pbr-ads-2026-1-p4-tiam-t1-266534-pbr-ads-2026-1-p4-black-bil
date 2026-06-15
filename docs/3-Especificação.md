@@ -68,6 +68,15 @@ Como funcionário, quero fazer login na área restrita, para acessar informaçõ
 **História 5 (relacionada ao RF-07):**
 Como funcionário, quero registrar os atendimentos realizados, para manter o histórico de serviços atualizado.
 
+**História 6 (relacionada ao RF-08):**
+Como proprietário, quero visualizar a quantidade de atendimentos realizados, para acompanhar o desempenho da barbearia.
+
+**História 7 (relacionada ao RF-09):**
+Como proprietário, quero visualizar quais serviços são mais procurados, para planejar promoções e estoque de produtos.
+
+**História 8 (relacionada ao RF-10):**
+Como proprietário, quero cadastrar e editar os serviços e produtos do site, para manter as informações sempre atualizadas.
+
 ---
 
 ## Histórias do Projeto
@@ -76,29 +85,72 @@ Como funcionário, quero registrar os atendimentos realizados, para manter o his
 
 ### História 1 (relacionada ao RF-01)
 
-Como __________________________________________  
-Eu quero _______________________________________  
-Para que _______________________________________
+Como cliente,
+Eu quero visualizar as informações institucionais da barbearia Black Bil,
+Para que eu possa conhecer melhor o estabelecimento antes de visitá-lo
 
 ---
 
 ### História 2 (relacionada ao RF-02)
 
-Como __________________________________________  
-Eu quero _______________________________________  
-Para que _______________________________________
+Como cliente,
+Eu quero visualizar os serviços e produtos oferecidos com seus respectivos preços,
+Para que eu possa decidir o que contratar antes de ir até a barbearia.
 
 ---
 
 ### História 3 (relacionada ao RF-__)
 
-Como __________________________________________  
-Eu quero _______________________________________  
-Para que _______________________________________
+Como cliente,
+Eu quero ver os horários de funcionamento da barbearia,
+Para que eu saiba quando posso comparecer e ser atendido.
+
+---
+ ### História 4 (relacionada ao RF-04)
+ 
+Como cliente,
+Eu quero visualizar a localização e o endereço da barbearia no mapa,
+Para que eu possa me orientar e chegar com facilidade ao estabelecimento.
+
+---
+### História 5 (relacionada ao RF-05)
+Como cliente,
+Eu quero acessar os canais de contato da barbearia,
+Para que eu possa tirar dúvidas ou agendar um horário com facilidade.
+
+---
+### História 6 (relacionada ao RF-06)
+Como funcionário,
+Eu quero fazer login em uma área restrita do site,
+Para que eu possa acessar informações exclusivas do negócio com segurança.
 
 ---
 
-> 💡 Dica: Agrupe as histórias por módulo (Cadastro, Relatórios, Pagamentos, etc.) para melhor organização.
+### História 7 (relacionada ao RF-07)
+Como funcionário,
+Eu quero registrar os atendimentos realizados no sistema,
+Para que o histórico de serviços seja mantido atualizado.
+
+---
+
+### História 8 (relacionada ao RF-08)
+Como proprietário,
+Eu quero visualizar a quantidade de atendimentos realizados no dashboard,
+Para que eu possa acompanhar o desempenho da barbearia.
+
+---
+### História 9 (relacionada ao RF-09)
+Como proprietário,
+Eu quero visualizar quais serviços são mais procurados pelos clientes,
+Para que eu possa planejar promoções e melhorar a oferta do negócio.
+
+---
+### História 10 (relacionada ao RF-10)
+Como proprietário,
+Eu quero cadastrar e editar os serviços e produtos exibidos no site,
+Para que as informações estejam sempre atualizadas para os clientes.
+
+---
 
 ---
 
@@ -122,10 +174,13 @@ Eles garantem a qualidade da solução.
 |--------|------------------------|------------|
 | RNF-01 | O sistema deve carregar as páginas em até 3 segundos. | 🟡 MÉDIA |
 | RNF-02 | O sistema deve proteger as informações dos clientes por meio de criptografia. | 🔴 ALTA |
-| RNF-03 | (Descreva aqui o requisito não funcional 3 do seu sistema) | (Alta/Média/Baixa) |
-| RNF-04 | (Descreva aqui o requisito não funcional 4 do seu sistema) | (Alta/Média/Baixa) |
-| RNF-05 | (Descreva aqui o requisito não funcional 5 do seu sistema) | (Alta/Média/Baixa) |
-| RNF-06 | (Descreva aqui o requisito não funcional 6 do seu sistema) | (Alta/Média/Baixa) |
+| RNF-03 | O sistema deve ser responsivo, adaptando-se a diferentes tamanhos de tela (desktop, tablet e mobile). | 🔴 ALTA |
+| RNF-04 |  O sistema deve ter uma interface simples e intuitiva, permitindo que qualquer usuário navegue sem dificuldades.  | 🔴 ALTA  |
+| RNF-05 | O sistema deve estar disponível 24 horas por dia, 7 dias por semana.| 🟡 MÉDIA  |
+| RNF-06 | A área restrita de funcionários deve exigir autenticação segura para acesso. |🔴 ALTA|
+| RNF-07 |  O sistema deve ser compatível com os principais navegadores do mercado (Chrome, Firefox, Edge e Safari). 
+
+
 
 ---
 
