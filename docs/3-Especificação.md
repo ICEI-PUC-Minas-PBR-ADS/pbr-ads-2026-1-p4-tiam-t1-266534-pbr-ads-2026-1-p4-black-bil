@@ -35,10 +35,6 @@ Os **Requisitos Funcionais (RF)** descrevem o que o sistema deve fazer.
 | RF-04 | O sistema deve permitir que funcionários façam login na área de funcionarios | (Alta/Média/Baixa) |
 | RF-05 | O sistema deve exibir um dashboard com a quantidade de atendimentos realizados | 🟢Baixa |
 | RF-06 | O sistema deve permitir que o proprietário cadastre e edite os serviços/produtos exibidos no site. | Média🟡 |
-| RF-07 | (Descreva aqui o requisito funcional 7 do seu sistema) | (Alta/Média/Baixa) |
-| RF-08 | (Descreva aqui o requisito funcional 8 do seu sistema) | (Alta/Média/Baixa) |
-| RF-09 | (Descreva aqui o requisito funcional 9 do seu sistema) | (Alta/Média/Baixa) |
-| RF-10 | (Descreva aqui o requisito funcional 10 do seu sistema) | (Alta/Média/Baixa) |
 
 ---
 
