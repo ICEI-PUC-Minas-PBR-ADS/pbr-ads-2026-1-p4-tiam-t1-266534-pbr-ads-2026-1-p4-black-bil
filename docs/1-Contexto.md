@@ -13,14 +13,15 @@ A solução será usada por clientes, que buscarão informações sobre a barbea
 
 ## 1.2 Objetivos  
 Desenvolver um site institucional para a barbearia Black Bil, com o propósito de melhorar sua presença digital e facilitar o acesso de clientes às informações e serviços oferecidos. 
-Objetivos Específicos 
-● Criar uma página institucional com informações sobre a barbearia. 
-● Disponibilizar informações sobre serviços e produtos oferecidos. 
-● Apresentar horários de funcionamento e localização do estabelecimento. 
-● Disponibilizar formas de contato para os clientes. 
-● Proporcionar uma interface simples e acessível para navegação dos usuários. 
-● Implementar, se possível, uma área restrita para funcionários. 
-● Desenvolver dashboards simples para visualização de indicadores do negócio. 
+Objetivos Específicos: 
+
+- Criar uma página institucional com informações sobre a barbearia. 
+- Disponibilizar informações sobre serviços e produtos oferecidos. 
+- Apresentar horários de funcionamento e localização do estabelecimento. 
+- Disponibilizar formas de contato para os clientes. 
+- Proporcionar uma interface simples e acessível para navegação dos usuários. 
+- Implementar, se possível, uma área restrita para funcionários. 
+- Desenvolver dashboards simples para visualização de indicadores do negócio. 
 
 ---
 
