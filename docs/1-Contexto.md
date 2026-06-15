@@ -5,12 +5,8 @@ funcionamento, localização e formas de contato. Atualmente, a presença digita
 ---
 
 ## 1.1 Problema  
-Descreva **claramente** o problema que o sistema vai resolver.  
-- Qual situação precisa ser melhorada?  
-- Onde e por quem essa solução será usada?  
-
-> 💡 *Exemplo:*  
-> "Pequenos hortifrutis enfrentam dificuldades para controlar estoques e evitar desperdícios, pois usam planilhas manuais que geram erros e    retrabalho."
+A barbearia Black Bil não possui presença digital, dificultando o acesso dos clientes a informações como serviços, horários, localização e contato, que hoje dependem de atendimento presencial ou telefônico. Além disso, o proprietário não possui ferramentas para acompanhar indicadores básicos do negócio, como atendimentos realizados e serviços mais procurados.
+A solução será usada por clientes, que buscarão informações sobre a barbearia online, e pelo proprietário e funcionários, que poderão acessar dashboards com dados do negócio.
 
 ---
 
