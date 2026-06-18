@@ -178,7 +178,7 @@ Eles garantem a qualidade da solução.
 | RNF-04 |  O sistema deve ter uma interface simples e intuitiva, permitindo que qualquer usuário navegue sem dificuldades.  | 🔴 ALTA  |
 | RNF-05 | O sistema deve estar disponível 24 horas por dia, 7 dias por semana.| 🟡 MÉDIA  |
 | RNF-06 | A área restrita de funcionários deve exigir autenticação segura para acesso. |🔴 ALTA|
-| RNF-07 |  O sistema deve ser compatível com os principais navegadores do mercado (Chrome, Firefox, Edge e Safari). 
+| RNF-07 |  O sistema deve ser compatível com os principais navegadores do mercado (Chrome, Firefox, Edge e Safari).| 🟡 MÉDIA  | 
 
 
 
@@ -206,11 +206,11 @@ Elas podem envolver:
 | R-01 | O projeto deverá ser entregue até o final do semestre. |
 | R-02 | O sistema deve funcionar apenas dentro da rede interna da empresa. |
 | R-03 | O software deve ser compatível com Windows e Linux. |
-| R-04 | (Descreva aqui a restrição 4 do seu projeto) |
-| R-05 | (Descreva aqui a restrição 5 do seu projeto) |
-| R-06 | (Descreva aqui a restrição 6 do seu projeto) |
-| R-07 | (Descreva aqui a restrição 7 do seu projeto) |
-| R-08 | (Descreva aqui a restrição 8 do seu projeto) |
+| R-04 |   O banco de dados utilizado deve ser gratuito e de fácil configuração, compatível com o ambiente de desenvolvimento da equipe.  |
+| R-05 |  A interface deve ser desenvolvida em português, voltada ao público brasileiro.  |
+| R-06 |  O código-fonte do projeto deverá ser versionado utilizando o Git/GitHub  |
+| R-07 |  O sistema não deve armazenar dados sensíveis de cartão de crédito ou informações financeiras dos clientes.  |
+| R-08 |  O sistema deve ser compatível com os principais tamanhos de tela de dispositivos móveis (smartphones e tablets).  |
 
 ---
 
@@ -218,11 +218,11 @@ Elas podem envolver:
 
 Antes de entregar, confirme:
 
-- [ ] Todos os RFs estão claros e numerados corretamente  
-- [ ] Todas as Histórias estão associadas a um RF  
-- [ ] RNFs estão mensuráveis  
-- [ ] Restrições são realmente limitações externas  
-- [ ] O documento está atualizado no GitHub  
+- [✅] Todos os RFs estão claros e numerados corretamente  
+- [✅] Todas as Histórias estão associadas a um RF  
+- [✅] RNFs estão mensuráveis  
+- [✅] Restrições são realmente limitações externas  
+- [✅] O documento está atualizado no GitHub  
 
 ---
 
