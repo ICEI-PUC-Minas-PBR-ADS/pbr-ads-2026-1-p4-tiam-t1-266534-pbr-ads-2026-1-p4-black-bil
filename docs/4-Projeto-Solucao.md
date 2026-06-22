@@ -16,13 +16,10 @@ A arquitetura deve refletir o modelo de **fatias verticais**, evidenciando o flu
 
 **Front-end → API (Back-end) → Banco de Dados**
 
-Semelhante à imagem abaixo:
 
-![Exemplo de Arquitetura](images/Funcionamento.png)
-
+<img width="2720" height="2080" alt="black_bil_arquitetura" src="https://github.com/user-attachments/assets/eb9b70fa-61d7-4fdb-ba28-449c453c6c59" />
 
 
- **Fonte:** [Guia Completo de Desenvolvimento de Software - UDS](https://uds.com.br/blog/desenvolvimento-de-software-guia-completo/) <br><br>
  
  ### 📎 Inserir o Diagrama de Arquitetura do Projeto do Grupo
 🚨 O grupo deverá inserir aqui a imagem
