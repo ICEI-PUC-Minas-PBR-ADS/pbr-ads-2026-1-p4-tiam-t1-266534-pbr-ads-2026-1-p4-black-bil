@@ -18,7 +18,6 @@ A arquitetura deve refletir o modelo de **fatias verticais**, evidenciando o flu
 
 <img width="2720" height="2080" alt="black_bil_arquitetura" src="https://github.com/user-attachments/assets/65c0e8df-4545-4a6c-9163-c1ddbc7385dd" />
 
-<img width="2720" height="2080" alt="black_bil_arquitetura" src="https://github.com/user-attachments/assets/eb9b70fa-61d7-4fdb-ba28-449c453c6c59" />
 
 
  
