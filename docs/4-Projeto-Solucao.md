@@ -40,9 +40,9 @@ Descreva as tecnologias, linguagens, frameworks, bibliotecas e serviços escolhi
 | Dimensão | Tecnologia Escolhida |
 |----------|----------------------|
 | Banco de Dados (SGBD) | MongoDB |
-| Back-end (API) | Ex: C# (.NET Core) |
+| Back-end (API) | C# (.NET Core) |
 | Front-end / Mobile | HTML + CSS + JavaScript|
-| Hospedagem / Deploy | Ex: Azure, AWS, Render ou Railway |
+| Hospedagem / Deploy |  Azure, AWS |
 | Gestão e Versionamento | GitHub e GitHub Projects (Kanban) |
 
  ⚠️ **Observação:**
