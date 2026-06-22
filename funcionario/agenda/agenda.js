@@ -2,6 +2,10 @@
 (function() {
     const sessao = JSON.parse(localStorage.getItem('blackbil_sessao') || 'null');
     if (!sessao || sessao.tipo !== 'funcionario') window.location.href = '../login/login.html';
+    if (['proprietario', 'admin'].includes(sessao?.role)) {
+        const li = document.getElementById('nav-equipe');
+        if (li) li.style.display = '';
+    }
 })();
 
 const HORARIOS_MANHA = ['09:00','09:30','10:00','10:30','11:00'];
@@ -165,6 +169,8 @@ function abrirModal(dataISO, horario, tipo) {
     if (tipo === 'ocupado') {
         const ag = _agendamentos.find(a => a.data === dataISO && a.horario === horario && a.status === 'confirmado');
         body.innerHTML = `
+            ${ag.clienteNome ? `<div class="detalhe-item"><span class="detalhe-rotulo">Cliente</span><span class="detalhe-valor">${ag.clienteNome}</span></div>` : ''}
+            ${ag.clienteTelefone ? `<div class="detalhe-item"><span class="detalhe-rotulo">Telefone</span><span class="detalhe-valor">${ag.clienteTelefone}</span></div>` : ''}
             <div class="detalhe-item"><span class="detalhe-rotulo">Serviço</span><span class="detalhe-valor">${ag.servico}</span></div>
             <div class="detalhe-item"><span class="detalhe-rotulo">Categoria</span><span class="detalhe-valor">${ag.categoria}</span></div>
             <div class="detalhe-item"><span class="detalhe-rotulo">Duração</span><span class="detalhe-valor">${formatarDuracao(ag.duracao || 30)}</span></div>

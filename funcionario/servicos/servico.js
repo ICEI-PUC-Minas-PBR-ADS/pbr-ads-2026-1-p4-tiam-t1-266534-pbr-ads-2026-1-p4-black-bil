@@ -2,6 +2,10 @@
 (function() {
     const sessao = JSON.parse(localStorage.getItem('blackbil_sessao') || 'null');
     if (!sessao || sessao.tipo !== 'funcionario') window.location.href = '../login/login.html';
+    if (['proprietario', 'admin'].includes(sessao?.role)) {
+        const li = document.getElementById('nav-equipe');
+        if (li) li.style.display = '';
+    }
 })();
 
 // ===== HELPERS =====
@@ -20,35 +24,17 @@ let catalogo       = {};
 let categoriaAtual = null;
 let editandoIndex  = null;
 
-// As fotos ficam apenas no localStorage (não são sincronizadas com o banco)
-const CHAVE_FOTOS = 'blackbil_fotos';
-
-function carregarFotos() {
-    return JSON.parse(localStorage.getItem(CHAVE_FOTOS) || '{}');
-}
-function salvarFotos(fotos) {
-    localStorage.setItem(CHAVE_FOTOS, JSON.stringify(fotos));
-}
-
 // ===== PERSISTÊNCIA =====
 async function carregarCatalogo() {
     catalogo = await API.getServicos();
-    const fotos = carregarFotos();
-    Object.keys(catalogo).forEach(slug => {
-        catalogo[slug].fotos = fotos[slug] || [];
-    });
     if (!categoriaAtual || !catalogo[categoriaAtual]) {
         categoriaAtual = Object.keys(catalogo)[0] || null;
     }
 }
 
 async function salvarCategoria(slug) {
-    const { titulo, itens } = catalogo[slug];
-    await API.salvarCategoria(slug, { titulo, itens });
-    // Salva fotos separadamente no localStorage
-    const fotos = carregarFotos();
-    fotos[slug] = catalogo[slug].fotos || [];
-    salvarFotos(fotos);
+    const { titulo, itens, fotos } = catalogo[slug];
+    await API.salvarCategoria(slug, { titulo, itens, fotos: fotos || [] });
 }
 
 // ===== ÍCONES =====
@@ -164,8 +150,8 @@ function renderFotos() {
     grid.querySelectorAll('.foto-card-deletar').forEach(btn => {
         btn.addEventListener('click', async () => {
             catalogo[categoriaAtual].fotos.splice(parseInt(btn.dataset.index), 1);
-            await salvarCategoria(categoriaAtual);
             renderFotos();
+            await salvarCategoria(categoriaAtual);
         });
     });
 }
@@ -195,7 +181,6 @@ async function deletarCategoria(cat) {
     if (!confirm(aviso)) return;
     await API.deletarCategoria(cat);
     delete catalogo[cat];
-    const fotos = carregarFotos(); delete fotos[cat]; salvarFotos(fotos);
     categoriaAtual = Object.keys(catalogo)[0] || null;
     renderTabs(); renderServicos();
 }

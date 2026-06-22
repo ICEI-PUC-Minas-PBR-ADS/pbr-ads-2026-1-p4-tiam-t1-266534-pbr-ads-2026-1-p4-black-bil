@@ -104,7 +104,7 @@ nav a:hover::after, nav a.nav-ativo::after { width: 100%; }
 .hamburger span {
     display: block;
     width: 22px; height: 2px;
-    background: var(--texto);
+    background: var(--azul);
     border-radius: 2px;
     transition: all 0.3s;
 }
@@ -517,14 +517,14 @@ nav a:hover::after, nav a.nav-ativo::after { width: 100%; }
         display: none;
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: var(--azul);
+        background: #203a43;
         padding: 8px 20px 14px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         z-index: 99;
     }
     nav.aberto { display: block; }
     nav ul { flex-direction: column; gap: 0; }
-    nav a { display: block; padding: 12px 0; font-size: 0.95rem; border-bottom: 1px solid rgba(0,0,0,0.08); }
+    nav a { display: block; padding: 12px 0; font-size: 0.95rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
     nav ul li:last-child a { border-bottom: none; }
 
     .nav-data { top: 62px; gap: 10px; padding: 12px 14px; }
