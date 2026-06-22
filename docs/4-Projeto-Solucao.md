@@ -205,9 +205,6 @@ O arquivo .sql ou .js deve ser salvo na pasta: src/bd
 > - Uso adequado de palavras reservadas <br>
 
 
-**Exemplo:**
-
-<img src="https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2021/11/09/BDB-1321-image005.png" width="85%">
 
 **FONTE:** <https://aws.amazon.com/pt/compare/the-difference-between-logical-and-physical-data-model/>
 
