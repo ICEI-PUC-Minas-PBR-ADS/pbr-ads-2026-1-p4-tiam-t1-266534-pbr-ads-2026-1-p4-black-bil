@@ -235,8 +235,8 @@ Este modelo deve exibir:
 
 ### 📎 Representação do Modelo Físico de Dados
 
-<img width="1028" height="1403" alt="image" src="https://github.com/user-attachments/assets/dc84387b-a4cb-447e-9ac3-07f7dedb8f77" />
 
+<img width="1800" height="1440" alt="modelo_fisico_black_bil" src="https://github.com/user-attachments/assets/c500698a-774e-4c7e-9223-0fb8e3256c58" />
 
 ---
 🔧**Ferramentas Sugeridas**
