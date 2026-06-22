@@ -1,7 +1,5 @@
 # 6. Teste de Usabilidade do Software
 
-> 🎯 **Momento da Entrega:** Este teste deve ser realizado e documentado no dia **22/05** (entre a Sprint 3 e a Sprint 4), avaliando as telas já produzidas até o momento.
-
 Nesta seção, abordaremos a realização do teste de usabilidade do software. O teste visa avaliar a eficácia, eficiência e a satisfação do usuário ao interagir com o sistema, garantindo que a interface e as funcionalidades atendam às necessidades do público-alvo. <br> <br>
 
 - 📝 **Nota:** A CTO (Professora) fornecerá um template de roteiro (em Word) para auxiliar na condução das entrevistas. Os resultados finais desse teste devem ser consolidados e digitados abaixo, substituindo os exemplos.
@@ -59,9 +57,3 @@ Imagens (prints) ou links para vídeos curtos das interações dos usuários, il
 
 > **Principais descobertas:** Não foram identificadas dificuldades significativas durante a realização das tarefas. A experiência dos usuários correspondeu ou superou as expectativas do squad em todos os cenários testados, indicando que a interface do site está bem estruturada e adequada ao público-alvo.
 
-*(Exemplo de Tabela:)*
-| Tarefa | Expectativa do Squad | Realidade do Usuário |
-| :--- | :--- | :--- |
-| **Criar conta** | Processo simples, feito em até 2 minutos | Um usuário levou mais de 5 minutos devido à falta de instruções claras na senha. |
-
-✏️ **Crie ou modifique a tabela comparativa do seu Squad abaixo (Opcional):**
