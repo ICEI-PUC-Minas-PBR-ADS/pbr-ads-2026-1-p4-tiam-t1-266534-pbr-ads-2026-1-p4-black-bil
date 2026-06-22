@@ -31,13 +31,19 @@ Dos cinco participantes, todos conseguiram concluir as três tarefas propostas s
 ---
 ## 6.4 Sugestões de Melhoria
 
-(+) A organização das informações sobre serviços e preços foi elogiada pela clareza e objetividade, devendo ser mantida nesse formato.
-(+) A seção de horários de funcionamento e localização foi considerada de fácil acesso pelos participantes, não sendo necessárias alterações estruturais.
-(+) As formas de contato foram rapidamente identificadas pelos participantes, indicando boa visibilidade dos elementos utilizados na interface.
-(+) O design geral do site foi bem avaliado pelos participantes, que destacaram a identidade visual condizente com o estilo de uma barbearia moderna.
-(-) Recomenda-se destacar o botão de contato via WhatsApp com maior contraste de cor, reforçando a chamada à ação para o usuário.
-(-) Sugere-se adicionar ícones visuais ao lado das informações de endereço, horário e contato, tornando a leitura mais rápida e intuitiva.
-(-) Recomenda-se incluir uma galeria de fotos com exemplos de cortes e serviços realizados, enriquecendo a experiência visual do usuário no site.
+-(+) A organização das informações sobre serviços e preços foi elogiada pela clareza e objetividade, devendo ser mantida nesse formato.
+
+-(+) A seção de horários de funcionamento e localização foi considerada de fácil acesso pelos participantes, não sendo necessárias alterações estruturais.
+
+-(+) As formas de contato foram rapidamente identificadas pelos participantes, indicando boa visibilidade dos elementos utilizados na interface.
+
+-(+) O design geral do site foi bem avaliado pelos participantes, que destacaram a identidade visual condizente com o estilo de uma barbearia moderna.
+
+-(-) Recomenda-se destacar o botão de contato via WhatsApp com maior contraste de cor, reforçando a chamada à ação para o usuário.
+
+-(-) Sugere-se adicionar ícones visuais ao lado das informações de endereço, horário e contato, tornando a leitura mais rápida e intuitiva.
+
+-(-) Recomenda-se incluir uma galeria de fotos com exemplos de cortes e serviços realizados, enriquecendo a experiência visual do usuário no site.
 
 ---
 ## 6.5 Registro Audiovisual (Evidências)
