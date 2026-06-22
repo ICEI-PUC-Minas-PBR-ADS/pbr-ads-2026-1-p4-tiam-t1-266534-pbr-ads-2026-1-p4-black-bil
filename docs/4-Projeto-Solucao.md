@@ -234,7 +234,9 @@ Este modelo deve exibir:
 ---
 
 ### 📎 Representação do Modelo Físico de Dados
-🚨 O grupo deverá inserir aqui a imagem do diagrama físico de dados.
+
+<img width="1028" height="1403" alt="image" src="https://github.com/user-attachments/assets/dc84387b-a4cb-447e-9ac3-07f7dedb8f77" />
+
 
 ---
 🔧**Ferramentas Sugeridas**
