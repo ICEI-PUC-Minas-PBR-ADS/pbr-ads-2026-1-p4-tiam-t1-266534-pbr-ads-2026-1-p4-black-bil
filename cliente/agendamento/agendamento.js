@@ -272,8 +272,9 @@ document.getElementById('btn-confirmar').addEventListener('click', async () => {
     const sessao = JSON.parse(localStorage.getItem('blackbil_sessao') || 'null');
 
     const resultado = await API.criarAgendamento({
-        clienteId:   sessao?.id   || null,
-        clienteNome: sessao?.nome || null,
+        clienteId:       sessao?.id       || null,
+        clienteNome:     sessao?.nome     || null,
+        clienteTelefone: sessao?.telefone || null,
         servico:     s.nome,
         categoria:   s.categoria,
         preco:       s.preco,
@@ -325,9 +326,6 @@ navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () 
 // ===== INIT =====
 async function init() {
     SERVICOS = await API.getServicos();
-    // Mescla fotos do localStorage (as fotos não vão pro banco)
-    const fotosLS = JSON.parse(localStorage.getItem('blackbil_fotos') || '{}');
-    Object.keys(SERVICOS).forEach(slug => { SERVICOS[slug].fotos = fotosLS[slug] || []; });
 
     estado.categoriaAtual = Object.keys(SERVICOS)[0] || null;
 
