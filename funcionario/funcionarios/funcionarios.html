@@ -12,6 +12,11 @@
     <header>
         <div class="titulo"><h1>Black Bil</h1></div>
         <div class="logo"><img src="../../src/logo.jpg" alt="Logo Black Bil"></div>
+        <button class="btn-perfil" id="btn-perfil" title="Minha foto de perfil">
+            <img class="perfil-foto" id="perfil-foto" alt="">
+            <span class="perfil-inicial" id="perfil-inicial"></span>
+        </button>
+        <input type="file" id="input-foto-perfil" accept="image/*" style="display:none">
         <button class="hamburger" id="hamburger" aria-label="Abrir menu">
             <span></span>
             <span></span>
@@ -19,6 +24,7 @@
         </button>
         <nav id="nav-menu">
             <ul>
+                <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
                 <li><a href="../agenda/agenda.html">Agenda</a></li>
                 <li><a href="../servicos/servico.html">Serviços</a></li>
                 <li><a href="#" class="nav-ativo">Equipe</a></li>

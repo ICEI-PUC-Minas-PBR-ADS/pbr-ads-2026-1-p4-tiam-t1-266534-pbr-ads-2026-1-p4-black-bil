@@ -22,8 +22,12 @@ function renderLista() {
         const ehEuMesmo = f.id === sessao.id;
         const labelRole  = f.role === 'proprietario' ? 'Proprietário' : f.role === 'admin' ? 'Suporte' : 'Funcionário';
         const classeRole = f.role === 'proprietario' ? 'role-proprietario' : f.role === 'admin' ? 'role-admin' : 'role-funcionario';
+        const avatar = f.foto
+            ? `<img class="card-foto" src="${f.foto}" alt="${f.nome}">`
+            : `<span class="card-inicial">${f.nome.charAt(0).toUpperCase()}</span>`;
         return `
             <div class="funcionario-card">
+                <div class="card-avatar">${avatar}</div>
                 <div class="funcionario-info">
                     <span class="funcionario-nome">${f.nome}</span>
                     <span class="funcionario-email">${f.email}</span>
@@ -102,6 +106,55 @@ hamburger.addEventListener('click', () => { hamburger.classList.toggle('ativo');
 navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
     hamburger.classList.remove('ativo'); navMenu.classList.remove('aberto');
 }));
+
+// ===== FOTO DE PERFIL =====
+function redimensionar(file, max = 200) {
+    return new Promise(resolve => {
+        const reader = new FileReader();
+        reader.onload = e => {
+            const img = new Image();
+            img.onload = () => {
+                const scale = Math.min(max / img.width, max / img.height, 1);
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+                canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+                resolve(canvas.toDataURL('image/jpeg', 0.85));
+            };
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    });
+}
+
+function aplicarFotoAvatar(base64) {
+    const img = document.getElementById('perfil-foto');
+    const ini = document.getElementById('perfil-inicial');
+    img.src = base64;
+    img.classList.add('visivel');
+    ini.style.display = 'none';
+}
+
+(async function initAvatar() {
+    document.getElementById('perfil-inicial').textContent = sessao.nome.charAt(0).toUpperCase();
+    try {
+        const f = await API.getFuncionario(sessao.id);
+        if (f.foto) aplicarFotoAvatar(f.foto);
+    } catch (e) {}
+    document.getElementById('btn-perfil').addEventListener('click', () => {
+        document.getElementById('input-foto-perfil').click();
+    });
+    document.getElementById('input-foto-perfil').addEventListener('change', async e => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const base64 = await redimensionar(file);
+        aplicarFotoAvatar(base64);
+        const idx = _funcionarios.findIndex(f => f.id === sessao.id);
+        if (idx !== -1) { _funcionarios[idx].foto = base64; renderLista(); }
+        await API.atualizarFuncionario(sessao.id, { foto: base64 });
+        e.target.value = '';
+    });
+})();
 
 // ===== INIT =====
 API.getFuncionarios().then(lista => {

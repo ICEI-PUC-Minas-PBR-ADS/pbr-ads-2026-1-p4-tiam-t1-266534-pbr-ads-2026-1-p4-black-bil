@@ -282,6 +282,55 @@ navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () 
     hamburger.classList.remove('ativo'); navMenu.classList.remove('aberto');
 }));
 
+// ===== FOTO DE PERFIL =====
+function redimensionar(file, max = 200) {
+    return new Promise(resolve => {
+        const reader = new FileReader();
+        reader.onload = e => {
+            const img = new Image();
+            img.onload = () => {
+                const scale = Math.min(max / img.width, max / img.height, 1);
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+                canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+                resolve(canvas.toDataURL('image/jpeg', 0.85));
+            };
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    });
+}
+
+function aplicarFotoAvatar(base64) {
+    const img = document.getElementById('perfil-foto');
+    const ini = document.getElementById('perfil-inicial');
+    img.src = base64;
+    img.classList.add('visivel');
+    ini.style.display = 'none';
+}
+
+(async function initAvatar() {
+    const sessao = JSON.parse(localStorage.getItem('blackbil_sessao') || 'null');
+    if (!sessao) return;
+    document.getElementById('perfil-inicial').textContent = sessao.nome.charAt(0).toUpperCase();
+    try {
+        const f = await API.getFuncionario(sessao.id);
+        if (f.foto) aplicarFotoAvatar(f.foto);
+    } catch (e) {}
+    document.getElementById('btn-perfil').addEventListener('click', () => {
+        document.getElementById('input-foto-perfil').click();
+    });
+    document.getElementById('input-foto-perfil').addEventListener('change', async e => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const base64 = await redimensionar(file);
+        aplicarFotoAvatar(base64);
+        await API.atualizarFuncionario(sessao.id, { foto: base64 });
+        e.target.value = '';
+    });
+})();
+
 // ===== INIT =====
 async function renderTudo() {
     await sincronizar(isoData(estado.dataAtual));

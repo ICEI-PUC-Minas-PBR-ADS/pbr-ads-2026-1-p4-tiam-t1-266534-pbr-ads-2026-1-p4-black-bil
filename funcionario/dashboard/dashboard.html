@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Bil — Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="titulo"><h1>Black Bil</h1></div>
+        <div class="logo"><img src="../../src/logo.jpg" alt="Logo Black Bil"></div>
+        <button class="btn-perfil" id="btn-perfil" title="Minha foto de perfil">
+            <img class="perfil-foto" id="perfil-foto" alt="">
+            <span class="perfil-inicial" id="perfil-inicial"></span>
+        </button>
+        <input type="file" id="input-foto-perfil" accept="image/*" style="display:none">
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#" class="nav-ativo">Dashboard</a></li>
+                <li><a href="../agenda/agenda.html">Agenda</a></li>
+                <li><a href="../servicos/servico.html">Serviços</a></li>
+                <li id="nav-equipe" style="display:none"><a href="../funcionarios/funcionarios.html">Equipe</a></li>
+                <li><button class="nav-sair" id="btn-sair" type="button">Sair</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="page-header">
+            <h2 class="page-titulo">Dashboard</h2>
+            <div class="filtros-periodo">
+                <button class="btn-periodo" data-dias="7">7 dias</button>
+                <button class="btn-periodo ativo" data-dias="30">30 dias</button>
+                <button class="btn-periodo" data-dias="90">90 dias</button>
+            </div>
+        </div>
+
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <span class="kpi-rotulo">Serviços concluídos</span>
+                <span class="kpi-valor" id="kpi-concluidos">—</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-rotulo">Receita total</span>
+                <span class="kpi-valor kpi-destaque" id="kpi-receita">—</span>
+            </div>
+            <div class="kpi-card">
+                <span class="kpi-rotulo">Ticket médio</span>
+                <span class="kpi-valor" id="kpi-ticket">—</span>
+            </div>
+            <div class="kpi-card kpi-card-alerta">
+                <span class="kpi-rotulo">Cancelamentos</span>
+                <span class="kpi-valor" id="kpi-cancelados">—</span>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3 class="chart-titulo">Receita por categoria</h3>
+                <div class="chart-container">
+                    <canvas id="grafico-categorias"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <h3 class="chart-titulo">Serviços por dia</h3>
+                <div class="chart-container">
+                    <canvas id="grafico-dias"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="futuros-secao" id="futuros-secao">
+            <h3 class="futuros-titulo">Próximos 30 dias</h3>
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3 class="chart-titulo">Agendamentos confirmados por dia</h3>
+                    <div class="chart-container chart-container-futuro" id="container-futuros">
+                        <canvas id="grafico-futuros"></canvas>
+                    </div>
+                    <p class="futuros-vazio escondido" id="futuros-vazio">Nenhum agendamento confirmado nos próximos 30 dias.</p>
+                </div>
+                <div class="chart-card">
+                    <h3 class="chart-titulo">Receita prevista por categoria</h3>
+                    <div class="chart-container chart-container-futuro" id="container-futuros-cat">
+                        <canvas id="grafico-futuros-cat"></canvas>
+                    </div>
+                    <p class="futuros-vazio escondido" id="futuros-cat-vazio">Nenhuma receita prevista nos próximos 30 dias.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../../api.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
